@@ -1,0 +1,10 @@
+# Normalisasi line ending: teks pakai LF, biner jangan diutak-atik
+* text=auto eol=lf
+
+*.pdf   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.pt    binary
+*.npz   binary
+*.xlsx  binary

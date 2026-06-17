@@ -1,0 +1,35 @@
+# ===== Output yang bisa dibuat ulang =====
+hasil/
+hasil_*/
+output/output_handoff/
+input/output_handoff/
+*_compare.png
+*_overlay.png
+
+# ===== Dataset besar (JANGAN di-push — unduh/buat ulang lokal) =====
+# PTB-XL (~3 GB) -> unduh dari PhysioNet bila ingin melatih ulang model
+ptb-xl-a-large-publicly-available-electrocardiography-dataset-1.0.3/
+# dataset sintetik (~1.5 GB) -> dibuat oleh training/synth_generator.py
+training/dataset/
+training/classify/cache/
+
+# ===== Model redundan / artefak latih (model yang DIPAKAI tetap di-track) =====
+training/checkpoints/*.pt
+!training/checkpoints/unet_best.pt
+training/checkpoints/history.npy
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# ===== OS / editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.tmp

@@ -1,0 +1,14 @@
+# Inti pipeline (digitalisasi vektor + FHIR + gambar perbandingan)
+numpy
+opencv-python
+matplotlib
+scipy
+PyMuPDF            # modul 'fitz' — baca PDF vektor
+wfdb               # baca format WFDB (PTB-XL / .hea/.dat)
+pytesseract        # OCR opsional untuk PDF hasil scan
+
+# Skrining AI + pelatihan U-Net (opsional).
+# Tanpa torch, digitalisasi & FHIR tetap jalan — hanya skrining AI dilewati.
+# Untuk GPU CUDA, ikuti instruksi resmi di https://pytorch.org
+torch
+scikit-learn
